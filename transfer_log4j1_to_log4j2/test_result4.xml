@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="A1" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %X{id} %-5p %c{1}:%L - %m%n"/> 
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="A1"/>
+        </Root>
+		<logger name="org.apache.mina" level="INFO"> </logger>
+		<logger name="com.ericsson.commonlibrary.remotecli" level="INFO"> </logger>
+		<logger name="com.ericsson.enmtg" level="DEBUG"> </logger>
+		<logger name="jacorb" level="INFO"> </logger>
+		<logger name="org.apache.axis" level="INFO"> </logger>
+    </Loggers>
+</Configuration>

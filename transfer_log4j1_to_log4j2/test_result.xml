@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="A1" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="%d{ISO8601} %X{nodeId} %-5p %m\n"/> 
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="A1"/>
+        </Root>
+		<logger name="org.apache.http" level="DEBUG"> </logger>
+		<logger name="org.apache.http.headers" level="INFO"> </logger>
+		<logger name="org.apache.http.wire" level="INFO"> </logger>
+		<logger name="org.apache.http.impl.execchain.MainClientExec" level="INFO"> </logger>
+		<logger name="com.ericsson.commonlibrary.ecimcom.netconf" level="DEBUG"> </logger>
+		<logger name="com.ericsson.msran.helpers.traceanderror.TraceAndErrorConfigurationDataHelper" level="INFO"> </logger>
+    </Loggers>
+</Configuration>

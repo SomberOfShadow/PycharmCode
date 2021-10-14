@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="A1" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="%d{ISO8601}{UTC} %-5p [%t] %c{1}:%L - %m%n"/> 
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="A1"/>
+        </Root>
+		<logger name="se.ericsson.wea.main.WeaSocket" level="INFO"> </logger>
+		<logger name="se.ericsson.wea.main.Wea.Nite" level="INFO"> </logger>
+		<logger name="com.sshtools.j2ssh" level="OFF"> </logger>
+		<logger name="se.ericsson.jcat.fw.utils.Ssh2Session" level="INFO"> </logger>
+		<logger name="se.ericsson.jcat.fw.utils.Ssh2SessionCore" level="INFO"> </logger>
+		<logger name="Ssh2Session" level="INFO"> </logger>
+		<logger name="org.apache.mina" level="INFO"> </logger>
+		<logger name="httpclient.wire.header" level="INFO"> </logger>
+		<logger name="httpclient.wire.content" level="INFO"> </logger>
+    </Loggers>
+</Configuration>

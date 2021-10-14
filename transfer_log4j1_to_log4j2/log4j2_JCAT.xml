@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="A1" target="SYSTEM_OUT" follow="true" >
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %X{id} %-5p %c{1}:%L - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+		<logger name="com.sshtools.j2ssh" level="OFF"> </logger>
+        <logger name="se.ericsson.jcat.fw.utils.Ssh2Session" level="INFO"> </logger>
+		<logger name="se.ericsson.jcat.fw.utils.Ssh2SessionCore" level="INFO"> </logger>		
+        <Root level="info">
+            <AppenderRef ref="A1"/>
+        </Root>
+    </Loggers>
+</Configuration>
